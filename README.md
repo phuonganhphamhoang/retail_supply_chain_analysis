@@ -1,4 +1,4 @@
-# 🏬 Retail Supply Chain Analysis
+# 🏬 Retail Smart Supply Chain Analysis & BI Dashboards
 
 **Tagline:** A complete end-to-end analytics initiative integrating Power BI, Python, and Tableau to assess business performance, resolve delivery inefficiencies, and segment customers for a major global retail chain.
 
@@ -30,9 +30,9 @@ This initiative provides a thorough analysis of a large-scale, multi-national re
 
 
 <p align="center">
-  <img src="images/dataco_rdm.png" width="700"/>
-  <br/>
-  <em>DataCo Relational Data Model (RDM)</em>
+  <img src="images/dataco_rdm.png" width="750"/>
+<br/>
+<em>DataCo Relational Data Model (RDM)</em>
 </p>
 
 ---
@@ -62,7 +62,7 @@ This initiative provides a thorough analysis of a large-scale, multi-national re
 
 ## 🚀 Dashboard Access
 
-* 📊 **Tableau Public**: [Link to Interactive Dashboard](#)
+* 📊 **Tableau Public**: [Link to Interactive Dashboard](https://public.tableau.com/app/profile/truonghuyphan.da/viz/TABLEAU-DataCoDashboard/EXCUTIVEdashboard)
 * 📊 **Power BI**: Available via `.pbix` file in project folder
 
 ---
