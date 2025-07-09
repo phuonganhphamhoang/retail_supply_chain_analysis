@@ -1,4 +1,4 @@
-# 🏬 Retail Smart Supply Chain Analysis & BI Dashboards
+# 🏬 Retail Supply Chain Analysis
 
 **Tagline:** A full-spectrum analytics project utilizing Power BI, Python, and Tableau to uncover operational inefficiencies, customer behavior patterns, and financial insights for a global retail enterprise.
 
