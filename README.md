@@ -1,161 +1,157 @@
 # 🏬 Retail Smart Supply Chain Analysis & BI Dashboards
 
-**Tagline:** A complete end-to-end analytics initiative integrating Power BI, Python, and Tableau to assess business performance, resolve delivery inefficiencies, and segment customers for a major global retail chain.
+**Tagline:** A full-spectrum analytics project utilizing Power BI, Python, and Tableau to uncover operational inefficiencies, customer behavior patterns, and financial insights for a global retail enterprise.
 
 ---
 
 ## 📌 Project Overview
 
-This initiative provides a thorough analysis of a large-scale, multi-national retail dataset. The workflow combines extensive data preprocessing, machine learning, and interactive dashboards to surface strategic insights that drive decisions on business expansion, logistics optimization, and customer engagement.
+This project delivers deep insights into a multinational retail dataset by integrating data preprocessing, machine learning, and dynamic dashboards. It supports data-driven decisions in areas such as business strategy, logistics optimization, and customer loyalty management.
 
 ---
 
-## 📊 Tools & Tech Stack
+## 📊 Tools & Technologies
 
-* 💻 **Power BI**: Data cleansing, modeling, and primary dashboards
-* 🐍 **Python (Pandas, Scikit-learn)**: RFM metrics & customer segmentation via KMeans
-* 🔢 **Tableau**: Executive and delivery-focused dashboards for visual storytelling
+* 💻 **Power BI** – Used for cleaning, modeling, and crafting the main dashboards
+* 🐍 **Python** – Leveraged for RFM metric calculations and customer clustering via KMeans
+* 📊 **Tableau** – Designed interactive visuals focused on executive KPIs and delivery analytics
 
 ---
 
 ## 📀 Dataset
+
+* Approx. 180,000 records × 52 attributes
+* Rich transactional data including orders, customers, logistics, and financials
+* Supports multidimensional analysis:
+
+  * Revenue, cost, and margin evaluation
+  * Delivery modes and punctuality
+  * Customer purchasing trends and loyalty levels
+
 **Source:** [Kaggle - DataCo Smart Supply Chain](https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis)
-* \~180,000 rows × 52 fields
-* Transaction-level data covering: orders, customers, shipping, financials, products
-* Allows multi-faceted analysis of:
-
-  * Financial performance: revenue, costs, net profit
-  * Delivery timeliness & mode efficiency
-  * Customer behavior, loyalty, and value
-
 
 <p align="center">
   <img src="images/dataco_rdm.png" width="750"/>
-<br/>
-<em>DataCo Relational Data Model (RDM)</em>
 </p>
+<p align="center"><em>DataCo Relational Data Model (RDM)</em></p>
 
 ---
 
 ## 📊 Dashboard Snapshots
 
-* 1️⃣ Executive Summary Dashboard
-* 2️⃣ Delivery Insights Dashboard
-* 3️⃣ Customer Segmentation & RFM Analysis Dashboard
+* 1️⃣ Executive Overview
+* 2️⃣ Shipping & Delivery Performance
+* 3️⃣ Customer Segmentation with RFM + Clustering
 
 <p align="center">
-  <img src="images/dashboard_exec.png" width="720"/>
-  <em>Executive Performance Overview</em>
+  <img src="images/dashboard_exec.png" width="750"/>
 </p>
+<p align="center"><em>Executive Performance Overview</em></p>
 
 <p align="center">
-  <img src="images/dashboard_delivery.png" width="720"/>
-  <em>Delivery Delays & Fulfillment KPIs</em>
+  <img src="images/dashboard_delivery.png" width="750"/>
 </p>
+<p align="center"><em>Delivery Metrics & Fulfillment Patterns</em></p>
 
 <p align="center">
-  <img src="images/dashboard_rfm.png" width="720"/>
-  <em>Customer Segmentation using RFM + KMeans</em>
+  <img src="images/dashboard_rfm.png" width="750"/>
 </p>
+<p align="center"><em>Customer Segmentation via RFM + KMeans</em></p>
 
 ---
 
 ## 🚀 Dashboard Access
 
-* 📊 **Tableau Public**: [Link to Interactive Dashboard](https://public.tableau.com/app/profile/truonghuyphan.da/viz/TABLEAU-DataCoDashboard/EXCUTIVEdashboard)
-* 📊 **Power BI**: Available via `.pbix` file in project folder
+* 📈 **Tableau**: [Interactive Dashboard on Tableau Public](https://public.tableau.com/app/profile/truonghuyphan.da/viz/TABLEAU-DataCoDashboard/EXCUTIVEdashboard)
+* 📊 **Power BI**: `.pbix` file included in the project repository
 
 ---
 
 ## 🚀 Project Objectives
 
-Build 3 core dashboards to extract insights across strategic pillars:
+Develop three core dashboards covering:
 
 ### 📈 Executive Dashboard
 
-* Track global KPIs: revenue, profit, cost trends
-* Identify top-performing product lines and regions
+* Visualize overall financial performance
+* Spot top regions and product lines
 
-### 🚚 Delivery Performance Dashboard
+### 🚚 Delivery Dashboard
 
-* Evaluate shipping classes and regions with delay issues
-* Quantify timeliness, fulfillment rate, and bottlenecks
+* Track delay frequency and fulfillment by shipping class
+* Detect underperforming zones
 
-### 📅 RFM + Segmentation Dashboard
+### 👥 RFM Segmentation Dashboard
 
-* Apply RFM scoring methodology
-* Use KMeans to cluster customers into behavioral segments:
-
-  * Loyal, Potential, New, Churned
+* Analyze Recency, Frequency, Monetary behavior
+* Cluster customers into actionable groups: Loyal, Potential, New, Churned
 
 ---
 
-## 📆 Project Workflow
+## 🗓 Project Workflow
 
-### 🔧 Data Preprocessing & Modeling (Power BI)
+### 🔧 Data Preparation (Power BI)
 
-* Removed duplicates and handled null values
-* Ensured consistent data types
-* Built data relationships to optimize DAX measures
+* Cleaned and standardized data
+* Defined relationships to support accurate calculations
 
-### 📊 Customer Segmentation (Python)
+### 📊 RFM Segmentation (Python)
 
-* Computed Recency, Frequency, Monetary metrics
-* Used KMeans to segment customers by purchase behavior
+* Derived RFM scores using `pandas`
+* Grouped customers using `KMeans` clustering
 
-### 📊 Dashboard Development (Power BI & Tableau)
+### 📊 Dashboard Development
 
-* Power BI: Used for comprehensive KPIs, delivery visuals, and segmentation
-* Tableau: Created interactive exploratory views for exec and delivery teams
-
----
-
-## 🔍 Key Findings
-
-### 🏦 Business Performance
-
-* High cost base: Discounts \~11%, other operational costs \~81% → Net profit margin only \~8.3% — low for retail
-* Global operations: 15K stores, but Puerto Rico leads in revenue (>38.5%) despite USA holding 54.1% of store count
-* Regional breakdown: Asia-Pacific (33.2%) and Europe (31.9%) are key markets
-* Anomaly in 2017: Revenue drop in Q4 despite +4.6% order growth → lower average order value
-
-### 🚗 Delivery Efficiency
-
-* Completion rate is high (95.65%) but delivery punctuality is poor: 54.8% late
-* First Class shipping doubles the delay risk; Second Class increases risk by 1.55x
-* Even Same Day shipments show frequent delays
-* Systematic lateness observed across time and regions
-
-### 🛋 Customer Insights
-
-* Retention issue: Only \~33% of customers return after the first quarter
-* Loyal + Potential segments (\~47% of base) contribute \~80% of revenue
-* New customers make up 37% of base, but contribute <10% in value
-* Churned users had high AOV before exit → show signs of missed opportunities
-
-### 💸 Discount Effectiveness
-
-* Loyal customers get fewer discounts but are highly profitable → should prioritize experience
-* Churned customers left despite large discounts → indicates dissatisfaction not price-driven
-* Discount-heavy strategy misfires on Potential group
+* Power BI: Detailed performance analysis and customer behavior
+* Tableau: Executive summaries and shipping KPIs
 
 ---
 
-## 🔎 Recommendations
+## 🔍 Key Insights
 
-### 🚚 Improve Logistics Reliability
+### 🏢 Financial Findings
 
-* Investigate root causes of First & Second Class delays
-* Rethink shipping strategy or revise ETA promises
-* Strengthen warehouse planning and regional coordination
+* High costs: \~11% discounts, \~81% other expenses → \~8.3% profit margin
+* Puerto Rico generates >38.5% revenue with fewer stores than the USA
+* APAC and Europe dominate regional sales shares
+* 2017 Q4: Sales rose but revenue fell due to lower AOV
 
-### 🌍 Prioritize High-Risk Zones
+### 🚚 Delivery Observations
 
-* Focus on East/North Africa, and Health & Beauty category (delay hotspots)
+* Completion is solid (95.65%) but timeliness lacking: \~55% late
+* First/Second Class modes correlate with higher delay odds
+* Same Day shipping also suffers from delays
 
-### 🎈 Refine Promotions Strategy
+### 🧑‍💼 Customer Behavior
 
-* Tailor discounts to match customer behavior clusters
-* Increase non-price incentives for Loyal and Churned segments
+* Retention drops steeply after initial engagement (\~33% repeat rate)
+* Loyal + Potential = 47% of users but drive 80% revenue
+* Newcomers large in number, low in value; churned users once high spenders
+
+### 💳 Discount Evaluation
+
+* Loyal users get fewer discounts yet spend more → prioritize service quality
+* Churned users left despite incentives → product/service pain points
+* Potential users over-targeted by ineffective promotions
+
+---
+
+## ✅ Recommendations
+
+### 🚛 Fix Shipping Bottlenecks
+
+* Audit First/Second Class operations
+* Update ETA frameworks
+* Optimize warehouse logistics
+
+### 🌍 Address High-Delay Regions
+
+* Prioritize East/North Africa
+* Improve delivery for Health & Beauty items
+
+### 🧠 Smarter Promotions
+
+* Align offers with loyalty levels
+* Shift focus from discounting to experience
 
 ---
